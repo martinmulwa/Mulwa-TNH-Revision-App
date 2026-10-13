@@ -1,0 +1,8 @@
+{
+  "name": "MULWA Revision",
+  "description": "A premium, minimalist clinical examination revision portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
