@@ -18,7 +18,7 @@ export type SourceType =
   | 'derived_saq'
   | 'derived_laq';
 
-export type PaperCategory = 'Block 1';
+export type PaperCategory = 'Block 1' | 'Respiratory Disorders';
 
 export interface PaperSet {
   setNumber: number;          // 1-based, unique, contiguous (1, 2, 3...)

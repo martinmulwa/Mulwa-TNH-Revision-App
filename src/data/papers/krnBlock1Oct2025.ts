@@ -14,6 +14,7 @@ export const KRN_BLOCK1_OCT2025_RESPIRATORY_DISORDERS: PastPaper = {
   month: "October",
   examType: "End of Block",
   title: "October 2025 End of Block Exam",
+  category: "Respiratory Disorders",
   block: "Block 1",
   unit: "Respiratory Disorders",
   totalQuestions: 37,

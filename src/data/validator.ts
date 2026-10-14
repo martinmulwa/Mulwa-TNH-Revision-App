@@ -37,7 +37,8 @@ const ALLOWED_SOURCE_TYPES: Set<SourceType> = new Set([
 ]);
 
 const ALLOWED_CATEGORIES = new Set<string>([
-  'Block 1'
+  'Block 1',
+  'Respiratory Disorders'
 ]);
 
 /**
