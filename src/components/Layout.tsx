@@ -10,7 +10,7 @@
  */
 
 import React from 'react';
-import { Home, BookOpen, AlertCircle, GraduationCap } from 'lucide-react';
+import { Home, BookOpen, AlertCircle, GraduationCap, FileText } from 'lucide-react';
 import { AppNavTab } from '../types';
 
 interface LayoutProps {
@@ -31,11 +31,8 @@ export default function Layout({ children, activeTab, setActiveTab, hideBottomNa
       <header className="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-slate-200/80">
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-13 sm:h-15 flex items-center justify-between">
           
-          {/* Left spacer for desktop symmetry */}
-          <div className="hidden md:flex items-center w-8 pointer-events-none" aria-hidden="true" />
-
-          {/* Brand Heading / Logo - Centered */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center z-10">
+          {/* Brand Heading / Logo: Centered on Mobile, Far Left on Tablet & Desktop */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:static md:translate-x-0 md:translate-y-0 md:left-auto md:top-auto flex items-center justify-center shrink-0 z-10">
             <button 
               type="button"
               onClick={() => setActiveTab('home')}
@@ -49,7 +46,7 @@ export default function Layout({ children, activeTab, setActiveTab, hideBottomNa
             </button>
           </div>
 
-          {/* Desktop Navigation Tabs */}
+          {/* Desktop / Tablet Navigation Tabs */}
           <nav className="hidden md:flex items-center gap-1 sm:gap-1.5 ml-auto z-20" aria-label="Primary Navigation">
             <button
               type="button"
@@ -91,6 +88,20 @@ export default function Layout({ children, activeTab, setActiveTab, hideBottomNa
 
             <button
               type="button"
+              onClick={() => setActiveTab('saqs')}
+              className={`px-2.5 sm:px-3 py-1.5 text-xs font-semibold transition-all rounded-xl min-h-[36px] cursor-pointer flex items-center gap-1.5 ${
+                activeTab === 'saqs'
+                  ? 'bg-[#0B1B3D] text-white shadow-xs'
+                  : 'text-slate-600 hover:text-[#0B1B3D] hover:bg-slate-100'
+              }`}
+              id="nav-tab-saqs"
+            >
+              <FileText className="w-3.5 h-3.5" />
+              <span>SAQ Bank</span>
+            </button>
+
+            <button
+              type="button"
               onClick={() => setActiveTab('review')}
               className={`px-2.5 sm:px-3 py-1.5 text-xs font-semibold transition-all rounded-xl min-h-[36px] cursor-pointer ${
                 activeTab === 'review'
@@ -122,7 +133,7 @@ export default function Layout({ children, activeTab, setActiveTab, hideBottomNa
           className="md:hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200/90 z-40 pb-safe shadow-lg"
           aria-label="Mobile Navigation"
         >
-          <div className="grid grid-cols-4 items-center h-15 max-w-md mx-auto px-1 sm:px-2">
+          <div className="grid grid-cols-5 items-center h-15 max-w-md mx-auto px-1">
             <button
               type="button"
               onClick={() => setActiveTab('home')}
@@ -136,7 +147,7 @@ export default function Layout({ children, activeTab, setActiveTab, hideBottomNa
               <div className={`p-1 rounded-lg ${activeTab === 'home' ? 'bg-indigo-50 text-[#0B1B3D]' : ''}`}>
                 <Home className="w-4.5 h-4.5" strokeWidth={activeTab === 'home' ? 2.5 : 2} />
               </div>
-              <span className={`text-[11px] leading-tight mt-0.5 ${
+              <span className={`text-[10px] sm:text-[11px] leading-tight mt-0.5 ${
                 activeTab === 'home' ? 'font-bold text-[#0B1B3D]' : 'font-medium text-slate-500'
               }`}>
                 Home
@@ -156,7 +167,7 @@ export default function Layout({ children, activeTab, setActiveTab, hideBottomNa
               <div className={`p-1 rounded-lg ${activeTab === 'papers' ? 'bg-indigo-50 text-[#0B1B3D]' : ''}`}>
                 <BookOpen className="w-4.5 h-4.5" strokeWidth={activeTab === 'papers' ? 2.5 : 2} />
               </div>
-              <span className={`text-[11px] leading-tight mt-0.5 ${
+              <span className={`text-[10px] sm:text-[11px] leading-tight mt-0.5 ${
                 activeTab === 'papers' ? 'font-bold text-[#0B1B3D]' : 'font-medium text-slate-500'
               }`}>
                 Papers
@@ -176,10 +187,30 @@ export default function Layout({ children, activeTab, setActiveTab, hideBottomNa
               <div className={`p-1 rounded-lg ${activeTab === 'tnh_practice' ? 'bg-indigo-50 text-[#0B1B3D]' : ''}`}>
                 <GraduationCap className="w-4.5 h-4.5" strokeWidth={activeTab === 'tnh_practice' ? 2.5 : 2} />
               </div>
-              <span className={`text-[11px] leading-tight mt-0.5 ${
+              <span className={`text-[10px] sm:text-[11px] leading-tight mt-0.5 ${
                 activeTab === 'tnh_practice' ? 'font-bold text-[#0B1B3D]' : 'font-medium text-slate-500'
               }`}>
                 Practice
+              </span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setActiveTab('saqs')}
+              className={`flex flex-col items-center justify-center py-1 rounded-xl transition-all min-h-[44px] cursor-pointer ${
+                activeTab === 'saqs'
+                  ? 'text-[#0B1B3D] font-bold'
+                  : 'text-slate-500 hover:text-slate-700'
+              }`}
+              title="SAQ Question Bank"
+            >
+              <div className={`p-1 rounded-lg ${activeTab === 'saqs' ? 'bg-indigo-50 text-[#0B1B3D]' : ''}`}>
+                <FileText className="w-4.5 h-4.5" strokeWidth={activeTab === 'saqs' ? 2.5 : 2} />
+              </div>
+              <span className={`text-[10px] sm:text-[11px] leading-tight mt-0.5 ${
+                activeTab === 'saqs' ? 'font-bold text-[#0B1B3D]' : 'font-medium text-slate-500'
+              }`}>
+                SAQs
               </span>
             </button>
 
@@ -196,7 +227,7 @@ export default function Layout({ children, activeTab, setActiveTab, hideBottomNa
               <div className={`p-1 rounded-lg ${activeTab === 'review' ? 'bg-rose-50 text-rose-700' : ''}`}>
                 <AlertCircle className="w-4.5 h-4.5" strokeWidth={activeTab === 'review' ? 2.5 : 2} />
               </div>
-              <span className={`text-[11px] leading-tight mt-0.5 ${
+              <span className={`text-[10px] sm:text-[11px] leading-tight mt-0.5 ${
                 activeTab === 'review' ? 'font-bold text-rose-800' : 'font-medium text-slate-500'
               }`}>
                 Mistakes

@@ -27,7 +27,6 @@ import {
   X,
   Check,
   AlertCircle,
-  Sparkles,
   Tag
 } from 'lucide-react';
 import { Question, AnswerState, QResult, OptionKey } from '../types';

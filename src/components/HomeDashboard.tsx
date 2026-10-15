@@ -19,7 +19,8 @@ import {
   RotateCcw,
   Trash2,
   X,
-  GraduationCap
+  GraduationCap,
+  FileText
 } from 'lucide-react';
 import { SessionProgress, AppNavTab } from '../types';
 import { getPaperMetrics, getActivityLog, parseSetKey } from '../utils/storage';
@@ -103,7 +104,7 @@ export default function HomeDashboard({
       )}
 
       {/* 3. Quick Access Navigation Tiles */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-3.5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3">
         {/* Past Papers Tile */}
         <button
           onClick={() => onNavigate('papers')}
@@ -143,7 +144,33 @@ export default function HomeDashboard({
                 TNH Practice
               </h2>
               <p className="text-[11px] font-medium text-indigo-600 truncate mt-0.5">
-                Acute Conditions · 59 Qs
+                {TNH_PRACTICE_PAPERS.length} Practice Papers · 179 Qs
+              </p>
+            </div>
+          </div>
+          <ChevronRight
+            className="w-4 h-4 text-slate-300 group-hover:text-[#0B1B3D] transition-colors shrink-0 ml-1.5"
+            strokeWidth={2}
+          />
+        </button>
+
+        {/* SAQ Question Bank Tile */}
+        <button
+          onClick={() => onNavigate('saqs')}
+          className="bg-white rounded-2xl border border-slate-200/90 hover:border-[#0B1B3D] p-3.5 sm:p-4 flex justify-between items-center transition-all text-left group min-h-[64px] shadow-2xs hover:shadow-xs active:scale-[0.99] cursor-pointer"
+          id="dashboard-saqs-tile"
+        >
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="w-9 h-9 rounded-xl bg-amber-50 flex items-center justify-center text-amber-800 shrink-0">
+              <FileText className="w-4.5 h-4.5" />
+            </div>
+            <div className="min-w-0">
+              <h2 className="font-bold text-sm text-slate-900 group-hover:text-[#0B1B3D] transition-colors leading-snug truncate flex items-center gap-1">
+                <span>SAQ Bank</span>
+                <span className="text-[9px] font-extrabold uppercase px-1.5 py-0.2 bg-amber-100 text-amber-900 rounded-sm">New</span>
+              </h2>
+              <p className="text-[11px] font-medium text-amber-700 truncate mt-0.5">
+                Block 1: Respiratory Disorders · 29 SAQs
               </p>
             </div>
           </div>

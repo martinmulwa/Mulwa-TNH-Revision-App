@@ -17,6 +17,9 @@ import RevisionSetSelection from './components/RevisionSetSelection';
 import QuestionScreen from './components/QuestionScreen';
 import ResultsScreen from './components/ResultsScreen';
 import ReviewIncorrectScreen from './components/ReviewIncorrectScreen';
+import SAQLibrary from './components/SAQLibrary';
+import SAQScreen from './components/SAQScreen';
+import { SAQ_CATEGORIES, getCategoryById } from './data/saqData';
 
 import {
   SessionProgress,
@@ -55,6 +58,13 @@ export default function App() {
   );
   const [selectedSetId, setSelectedSetId] = useState<string>('set1');
 
+  // SAQ Practice Session States
+  const [selectedSaqCategoryId, setSelectedSaqCategoryId] = useState<string>(
+    SAQ_CATEGORIES[0]?.id || 'chest-drain'
+  );
+  const [saqQuestionIndexInCat, setSaqQuestionIndexInCat] = useState<number>(0);
+  const [saqView, setSaqView] = useState<'library' | 'screen'>('library');
+
   // Active Examination Session States
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [activeAnswers, setActiveAnswers] = useState<Record<string, AnswerState>>({});
@@ -75,6 +85,51 @@ export default function App() {
   const handleTabNavigation = (tab: AppNavTab) => {
     setActiveTab(tab);
     setView('tabs');
+    if (tab === 'saqs') {
+      setSaqView('library');
+    }
+  };
+
+  const handleSelectSAQCategory = (categoryId: string) => {
+    setSelectedSaqCategoryId(categoryId);
+    setSaqQuestionIndexInCat(0);
+    setSaqView('screen');
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  };
+
+  const handleExitSAQCategory = () => {
+    setSaqView('library');
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  };
+
+  const handleToggleMasteredSAQ = (id: string) => {
+    setProgress(prev => {
+      const current = prev.masteredSAQs || [];
+      const updatedMastered = current.includes(id)
+        ? current.filter(item => item !== id)
+        : [...current, id];
+      const updated = {
+        ...prev,
+        masteredSAQs: updatedMastered
+      };
+      saveProgress(updated);
+      return updated;
+    });
+  };
+
+  const handleToggleBookmarkSAQ = (id: string) => {
+    setProgress(prev => {
+      const isBookmarked = prev.bookmarkedQuestions.includes(id);
+      const updatedBookmarks = isBookmarked
+        ? prev.bookmarkedQuestions.filter(qid => qid !== id)
+        : [...prev.bookmarkedQuestions, id];
+      const updated = {
+        ...prev,
+        bookmarkedQuestions: updatedBookmarks
+      };
+      saveProgress(updated);
+      return updated;
+    });
   };
 
   const handleSelectPaper = (paperId: string) => {
@@ -411,7 +466,7 @@ export default function App() {
     <Layout
       activeTab={activeTab}
       setActiveTab={handleTabNavigation}
-      hideBottomNav={view === 'active_exam'}
+      hideBottomNav={view === 'active_exam' || (activeTab === 'saqs' && saqView === 'screen')}
     >
       {/* Tabbed Views */}
       {view === 'tabs' && (
@@ -447,6 +502,36 @@ export default function App() {
                 setActiveTab(section === 'tnh_practice' ? 'tnh_practice' : 'papers');
               }}
             />
+          )}
+
+          {activeTab === 'saqs' && (
+            <>
+              {saqView === 'library' ? (
+                <SAQLibrary
+                  masteredIds={progress.masteredSAQs || []}
+                  onSelectCategory={handleSelectSAQCategory}
+                  onBackToHome={() => handleTabNavigation('home')}
+                />
+              ) : (
+                (() => {
+                  const currentCategory = getCategoryById(selectedSaqCategoryId) || SAQ_CATEGORIES[0];
+                  const categoryQuestions = currentCategory ? currentCategory.questions : [];
+                  return (
+                    <SAQScreen
+                      categoryTitle={currentCategory ? currentCategory.title : 'SAQ Practice'}
+                      questions={categoryQuestions}
+                      currentQuestionIndex={saqQuestionIndexInCat}
+                      masteredIds={progress.masteredSAQs || []}
+                      bookmarkedIds={progress.bookmarkedQuestions}
+                      onSelectIndex={setSaqQuestionIndexInCat}
+                      onToggleMastered={handleToggleMasteredSAQ}
+                      onToggleBookmark={handleToggleBookmarkSAQ}
+                      onExit={handleExitSAQCategory}
+                    />
+                  );
+                })()
+              )}
+            </>
           )}
 
           {activeTab === 'review' && (

@@ -29,7 +29,9 @@ export const INITIAL_SESSION: SessionProgress = {
   completedSets: {},
   inProgressSets: {},
   bookmarkedQuestions: [],
-  incorrectQuestions: []
+  incorrectQuestions: [],
+  masteredSAQs: [],
+  revealedSAQs: []
 };
 
 /**
@@ -185,12 +187,22 @@ export function migrateSessionData(raw: unknown): SessionProgress {
     ? data.bookmarkedQuestions.filter(x => typeof x === 'string')
     : [];
 
+  const masteredSAQs = Array.isArray(data.masteredSAQs)
+    ? data.masteredSAQs.filter(x => typeof x === 'string')
+    : [];
+
+  const revealedSAQs = Array.isArray(data.revealedSAQs)
+    ? data.revealedSAQs.filter(x => typeof x === 'string')
+    : [];
+
   return {
     schemaVersion: CURRENT_SCHEMA_VERSION,
     completedSets: migratedCompleted,
     inProgressSets: migratedInProgress,
     bookmarkedQuestions,
-    incorrectQuestions: migratedMistakes
+    incorrectQuestions: migratedMistakes,
+    masteredSAQs,
+    revealedSAQs
   };
 }
 

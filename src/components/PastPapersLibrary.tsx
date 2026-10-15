@@ -33,7 +33,6 @@ import {
   ChevronDown,
   Check,
   GraduationCap,
-  Sparkles,
   FileText
 } from 'lucide-react';
 import { SessionProgress, PastPaper } from '../types';

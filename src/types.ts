@@ -10,7 +10,7 @@
 
 export type OptionKey = 'A' | 'B' | 'C' | 'D';
 
-export type QuestionType = 'mcq' | 'true_false';
+export type QuestionType = 'mcq' | 'true_false' | 'saq';
 
 export type SourceType =
   | 'original_mcq'
@@ -21,7 +21,86 @@ export type SourceType =
 
 export type PaperCategory = 'Block 1' | 'Respiratory Disorders';
 
-export type AppNavTab = 'home' | 'papers' | 'tnh_practice' | 'review';
+export type AppNavTab = 'home' | 'papers' | 'tnh_practice' | 'saqs' | 'review';
+
+export interface SAQTable {
+  headers: string[];
+  rows: string[][];
+}
+
+export interface SAQMnemonicEntry {
+  title: string;
+  summary?: string;
+  source?: string;
+  table?: SAQTable;
+}
+
+export interface SAQModelAnswer {
+  intro?: string;
+  points?: string[];
+  subsections?: Array<{
+    heading: string;
+    points: string[];
+  }>;
+  table?: SAQTable;
+  diagram?: string;
+  diagramCaption?: string;
+  conclusion?: string;
+  contentSupport?: string;
+}
+
+export interface SAQAceItTip {
+  title: string;
+  tips: string[];
+}
+
+export interface SAQQuestion {
+  id: string;
+  qNumber: string;
+  partId: string;
+  partTitle: string;
+  block?: string;
+  category?: string;
+  tier: 'Tier 1' | 'Tier 2' | 'Tier 3';
+  topic: string;
+  text: string;
+  marks: number;
+  marksText: string;
+  frequencyText: string;
+  modelAnswer: SAQModelAnswer;
+  memoryTips: string[];
+  mnemonics?: SAQMnemonicEntry[];
+  warningNotice?: string;
+  aceItTip: SAQAceItTip;
+}
+
+export interface SAQPart {
+  id: string;
+  partNumber: number;
+  title: string;
+  shortTitle: string;
+  block?: string;
+  category?: string;
+  condition?: string;
+  tier?: 'Tier 1' | 'Tier 2' | 'Tier 3';
+  frequencyBadge?: string;
+  frequencyRank?: number;
+  description?: string;
+  questionCount: number;
+  questions: SAQQuestion[];
+}
+
+export interface SAQBankData {
+  id: string;
+  title: string;
+  subtitle: string;
+  author: string;
+  version: string;
+  block?: string;
+  category?: string;
+  totalQuestions: number;
+  parts: SAQPart[];
+}
 
 export interface PaperSet {
   setNumber: number;          // 1-based, unique, contiguous (1, 2, 3...)
@@ -129,6 +208,8 @@ export interface SessionProgress {
   inProgressSets: Record<string, InProgressSetState>;
   bookmarkedQuestions: string[];
   incorrectQuestions: IncorrectQuestionRecord[];
+  masteredSAQs?: string[];
+  revealedSAQs?: string[];
 }
 
 export interface ActivityLog {

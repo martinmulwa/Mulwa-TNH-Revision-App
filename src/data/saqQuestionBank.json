@@ -1,0 +1,1325 @@
+{
+  "id": "respiratory-saq-question-bank",
+  "title": "Respiratory Disorders: SAQ Question Bank",
+  "subtitle": "Categorized by condition and ordered by historical exam frequency (2011 to 2026).",
+  "author": "MULWA <martinmulwa95@gmail.com>",
+  "version": "2.0.0",
+  "totalQuestions": 29,
+  "parts": [
+    {
+      "id": "chest-drain",
+      "partNumber": 1,
+      "title": "Chest Drain & Underwater Seal Drainage",
+      "shortTitle": "Chest Drain (UWSD)",
+      "condition": "Chest Drain / UWSD",
+      "tier": "Tier 1",
+      "frequencyBadge": "Tested in 8 of 12 papers · Most Repeated",
+      "frequencyRank": 1,
+      "description": "Comprehensive nursing care, water-seal observation, troubleshooting, indications, and complications.",
+      "questionCount": 3,
+      "questions": [
+        {
+          "id": "saq_chest_drain_1",
+          "qNumber": "Q1",
+          "partId": "chest-drain",
+          "partTitle": "Chest Drain & Underwater Seal Drainage",
+          "tier": "Tier 1",
+          "topic": "Chest Drain / UWSD",
+          "text": "Outline the nursing interventions for a patient with a chest drain (UWSD).",
+          "marks": 14,
+          "marksText": "3 to 14 marks, asked 8 times",
+          "frequencyText": "Tested in 8 of 12 papers · Single most repeated question in the bank",
+          "modelAnswer": {
+            "subsections": [
+              {
+                "heading": "A. Before and during insertion",
+                "points": [
+                  "Explain the procedure, obtain consent and reduce anxiety.",
+                  "Position the patient (sitting up, leaning forward over a table, or semi-Fowler's with the arm raised); give prescribed analgesia.",
+                  "Prepare sterile equipment and assist the doctor using aseptic technique."
+                ]
+              },
+              {
+                "heading": "B. Ongoing care",
+                "points": [
+                  "Keep the drainage system closed, upright and below chest level at all times. Rationale: gravity drains fluid and air and prevents backflow into the pleural space.",
+                  "Keep tubing patent: no kinks, no dependent loops, patient not lying on it. Secure all connections with tape. Rationale: blockage causes tension pneumothorax.",
+                  "Check the water-seal chamber: water at the prescribed level (about 2 cm); observe tidaling (water rises with inspiration and falls with expiration in a spontaneously breathing patient). Rationale: confirms patency and a working seal.",
+                  "Observe for bubbling: occasional bubbling on expiration or coughing is expected with a pneumothorax; continuous bubbling = air leak: check connections and the tube site and report.",
+                  "Measure and record drainage: mark the level with time and date; record amount, colour and consistency. Report a sudden increase or frank blood (follow unit's threshold, commonly about 100 to 200 mL/hour).",
+                  "Monitor the patient: respiratory rate, SpO₂, breath sounds, chest movement, pulse, BP, and for surgical emphysema (crackling under the skin) or tracheal deviation.",
+                  "Do not clamp the tube unless instructed (risk of tension pneumothorax). Do not 'milk' or strip the tube unless ordered.",
+                  "Keep two clamps, a bottle of sterile water, sterile occlusive (petroleum) gauze and dressings at the bedside for emergencies.",
+                  "Position in semi-Fowler's to aid drainage and breathing.",
+                  "Pain control: give analgesia so the patient can breathe deeply and cough.",
+                  "Encourage deep breathing, coughing, incentive spirometry and arm and shoulder exercises on the affected side.",
+                  "Dressing care: keep the site dry and occlusive; inspect for leak, redness, swelling or crepitus; change per protocol.",
+                  "Mobilise safely: carry the drain below chest level; do not lift above the insertion site.",
+                  "Document observations and give psychological support."
+                ]
+              },
+              {
+                "heading": "C. Emergencies",
+                "points": [
+                  "Tube disconnects or drainage unit breaks: immediately place the open end of the chest tube in a bottle of sterile water (below chest level) and replace the system quickly.",
+                  "Tube pulled out: cover the site at once with sterile occlusive dressing taped on three sides, and call the doctor."
+                ]
+              },
+              {
+                "heading": "D. Removal",
+                "points": [
+                  "Explain; give analgesia; patient exhales or does a Valsalva as the tube is withdrawn; apply an airtight dressing; obtain a chest X-ray afterwards. Removal is commonly done when there is no air leak, drainage is low and stable, and the X-ray shows lung re-expansion."
+                ]
+              }
+            ],
+            "contentSupport": "Supported by Picmonic chest tube care, nursing prep guide on fluctuation, and thoracic surgery removal-criteria guidelines."
+          },
+          "warningNotice": "⚠️ Where sources disagree: Some older textbooks and flashcards say 'clamp the tube' if the water-seal bottle breaks. Current clinical guidance is to submerge the tube end in sterile water and avoid clamping, because clamping risks tension pneumothorax. Know both, and write what your college notes say first.",
+          "memoryTips": [
+            "Memory tip: TUBES for the 5 core points",
+            "Troubleshooting mnemonic: DOPE (Nurse Study) — If the patient deteriorates or the drain stops working, think Dislodged, Obstructed, Pneumothorax, Equipment failure."
+          ],
+          "mnemonics": [
+            {
+              "title": "TUBES Mnemonic",
+              "table": {
+                "headers": [
+                  "Letter",
+                  "Point"
+                ],
+                "rows": [
+                  [
+                    "T",
+                    "Tidaling checked (and amount/colour of drainage)"
+                  ],
+                  [
+                    "U",
+                    "Upright and below chest level"
+                  ],
+                  [
+                    "B",
+                    "Bedside clamps and sterile water (and Bubbling = leak)"
+                  ],
+                  [
+                    "E",
+                    "Escape of air: no kinks, secure connections, never clamp unless told"
+                  ],
+                  [
+                    "S",
+                    "Site: dressing, pain relief and breathing exercises"
+                  ]
+                ]
+              }
+            }
+          ],
+          "aceItTip": {
+            "title": "Ace it: chest drain questions",
+            "tips": [
+              "3 or 4 marks: give TUBES (any 4) and you are done.",
+              "5 to 6 marks: TUBES plus one emergency point (tube disconnects → sterile water).",
+              "14 marks: structure it as Before / During / Troubleshooting / Removal with headings. Headings make a long answer look organised and earn marks for completeness.",
+              "Never forget 'do not clamp unless instructed' and 'keep below chest level'. They are the two most commonly marked points."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_chest_drain_2",
+          "qNumber": "Q2",
+          "partId": "chest-drain",
+          "partTitle": "Chest Drain & Underwater Seal Drainage",
+          "tier": "Tier 1",
+          "topic": "Chest Drain / UWSD",
+          "text": "List six indications for chest tube drainage.",
+          "marks": 3,
+          "marksText": "3 marks, asked 2 times",
+          "frequencyText": "Tested in 8 of 12 papers · Asked 2 times",
+          "modelAnswer": {
+            "points": [
+              "Pneumothorax (spontaneous, traumatic, or after decompression of a tension pneumothorax).",
+              "Haemothorax.",
+              "Haemopneumothorax.",
+              "Pleural effusion (large, recurrent, or malignant).",
+              "Empyema (pus in the pleural space).",
+              "After thoracic or cardiac surgery (to drain blood, fluid and air, and re-expand the lung).",
+              "Chylothorax; trauma with rib fractures when positive-pressure ventilation is planned."
+            ]
+          },
+          "memoryTips": [
+            "\"Air, Blood, Water, Pus, Lymph, Surgery\" = pneumothorax, haemothorax, effusion, empyema, chylothorax, post-op. Six words for six marks."
+          ],
+          "aceItTip": {
+            "title": "Ace it: quick recall",
+            "tips": [
+              "Remember the fluid types: air, blood, fluid, pus, chyle, plus post-thoracic surgery."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_chest_drain_3",
+          "qNumber": "Q3",
+          "partId": "chest-drain",
+          "partTitle": "Chest Drain & Underwater Seal Drainage",
+          "tier": "Tier 1",
+          "topic": "Chest Drain / UWSD",
+          "text": "State three complications of chest tube drainage.",
+          "marks": 3,
+          "marksText": "3 marks, asked 2 times",
+          "frequencyText": "Tested in 8 of 12 papers · Asked 2 times",
+          "modelAnswer": {
+            "points": [
+              "Bleeding/haemorrhage (intercostal vessel injury).",
+              "Infection at the site or empyema.",
+              "Dislodgement or disconnection → pneumothorax.",
+              "Obstruction by clots or kinking → tension pneumothorax or retained collection.",
+              "Surgical (subcutaneous) emphysema.",
+              "Injury to lung, diaphragm or liver/spleen during insertion; pain."
+            ]
+          },
+          "memoryTips": [
+            "Memory tip: BIDO — Bleeding · Infection · Dislodgement · Obstruction."
+          ],
+          "aceItTip": {
+            "title": "Ace it: complications",
+            "tips": [
+              "State clear clinical terms (haemorrhage, infection, displacement, obstruction) rather than vague phrases."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        }
+      ],
+      "block": "Block 1",
+      "category": "Respiratory Disorders"
+    },
+    {
+      "id": "asthma",
+      "partNumber": 2,
+      "title": "Asthma",
+      "shortTitle": "Asthma",
+      "condition": "Asthma",
+      "tier": "Tier 1",
+      "frequencyBadge": "Tested in 9 of 12 papers · Tier 1",
+      "frequencyRank": 2,
+      "description": "Pathophysiology, acute nursing care, discharge health messages, severe attack manifestations, and predisposing risk factors.",
+      "questionCount": 5,
+      "questions": [
+        {
+          "id": "saq_asthma_1",
+          "qNumber": "Q1",
+          "partId": "asthma",
+          "partTitle": "Asthma",
+          "tier": "Tier 1",
+          "topic": "Asthma",
+          "text": "Describe the pathophysiology of (acute) asthma.",
+          "marks": 5,
+          "marksText": "5 marks, asked 4 times",
+          "frequencyText": "Tested in 9 of 12 papers · Asked 4 times",
+          "modelAnswer": {
+            "intro": "Asthma is a chronic inflammatory disease of the airways with reversible airflow obstruction and airway hyperresponsiveness. It has three key processes: bronchoconstriction, inflammation and mucus.",
+            "points": [
+              "Trigger exposure: In a susceptible person (often atopic), an allergen, cold air, exercise, infection or smoke acts on the airway.",
+              "Early phase (minutes): IgE attaches to mast cells, which degranulate and release histamine and leukotrienes. These cause smooth muscle contraction (bronchospasm), so the airway narrows.",
+              "Late phase (about 4 to 8 hours later): Eosinophils, neutrophils, basophils and T-cells flood into the airways. This causes mucosal oedema, more bronchoconstriction and increased mucus production (goblet cell hyperplasia, mucus plugs).",
+              "Result: Airway lumen narrows, resistance rises, and air is trapped, especially on expiration. Patient develops wheeze, dyspnoea, cough and chest tightness, with V/Q mismatch and hypoxaemia.",
+              "Chronic or untreated asthma: Repeated inflammation can cause airway remodelling (thickened smooth muscle, sub-basement fibrosis) and the obstruction becomes less reversible."
+            ],
+            "contentSupport": "Content supported by OpenStax Medical-Surgical Nursing and Visible Body."
+          },
+          "memoryTips": [
+            "\"Narrow, Swollen, Sticky\" = bronchoconstriction, inflammation/oedema, mucus. Say it in your head before you write.",
+            "Early = Quick (minutes, spasm). Late = Lingering (hours, swelling and mucus).",
+            "Draw it as a flow chart: Trigger → IgE/mast cell → histamine, leukotrienes → spasm → (hours) → eosinophils → oedema + mucus → obstruction → wheeze."
+          ],
+          "aceItTip": {
+            "title": "Ace it: pathophysiology SAQs",
+            "tips": [
+              "Use arrows. Examiners reward a logical chain.",
+              "Always finish with 'which causes (the symptoms)', because the last link to the clinical picture often carries a mark."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_asthma_2",
+          "qNumber": "Q2",
+          "partId": "asthma",
+          "partTitle": "Asthma",
+          "tier": "Tier 1",
+          "topic": "Asthma",
+          "text": "Outline the nursing management of a patient admitted with acute asthma until discharge.",
+          "marks": 13,
+          "marksText": "4 to 13 marks, asked 4 times",
+          "frequencyText": "Tested in 9 of 12 papers · Asked 4 times",
+          "modelAnswer": {
+            "subsections": [
+              {
+                "heading": "On admission (priority: airway, breathing, oxygenation)",
+                "points": [
+                  "Assess rapidly: respiratory rate, SpO₂, pulse, ability to speak in sentences, accessory muscle use, wheeze, peak expiratory flow (PEF) if possible. Rationale: severity guides treatment.",
+                  "Position upright (high Fowler's or leaning forward on a table). Rationale: maximises lung expansion.",
+                  "Give oxygen as prescribed, aiming for SpO₂ in the target range. Rationale: corrects hypoxaemia.",
+                  "Give bronchodilators (salbutamol nebulised or via spacer), plus ipratropium if prescribed. Rationale: relaxes bronchial smooth muscle.",
+                  "Give corticosteroids (oral prednisolone or IV hydrocortisone) as prescribed. Rationale: reduces airway inflammation; prevents the late phase.",
+                  "Establish IV access; give fluids as prescribed. Keep the patient well hydrated. Rationale: loosens secretions.",
+                  "Reassure and stay with the patient; keep the environment calm. Rationale: anxiety worsens dyspnoea.",
+                  "Monitor continuously: vitals, SpO₂, PEF, ABGs if severe, response to treatment. Escalate if PEF falls, the chest goes silent, the patient becomes exhausted or confused, or SpO₂ falls."
+                ]
+              },
+              {
+                "heading": "During stay",
+                "points": [
+                  "Identify and remove triggers (smoke, allergens, infection).",
+                  "Encourage rest, then gradual mobilisation; give small frequent meals.",
+                  "Monitor for drug side effects (tremor and tachycardia with salbutamol).",
+                  "Keep the call bell reachable."
+                ]
+              },
+              {
+                "heading": "Before discharge",
+                "points": [
+                  "Teach inhaler/spacer technique, trigger avoidance, peak flow and an action plan. Arrange follow-up within about 1 to 2 weeks."
+                ]
+              }
+            ],
+            "contentSupport": "Consistent with discharge-checklist elements in the NHLBI-based asthma discharge table and the RCH asthma discharge guideline."
+          },
+          "memoryTips": [
+            "Memory tip: BREATHE"
+          ],
+          "mnemonics": [
+            {
+              "title": "BREATHE Mnemonic",
+              "table": {
+                "headers": [
+                  "Letter",
+                  "Action"
+                ],
+                "rows": [
+                  [
+                    "B",
+                    "Bronchodilators (salbutamol)"
+                  ],
+                  [
+                    "R",
+                    "Reassure and rest"
+                  ],
+                  [
+                    "E",
+                    "Elevate (sit upright)"
+                  ],
+                  [
+                    "A",
+                    "Assess (RR, SpO₂, PEF, speech) and Airway/oxygen"
+                  ],
+                  [
+                    "T",
+                    "Treat inflammation (steroids)"
+                  ],
+                  [
+                    "H",
+                    "Hydrate (fluids)"
+                  ],
+                  [
+                    "E",
+                    "Evaluate and escalate (and educate before discharge)"
+                  ]
+                ]
+              }
+            }
+          ],
+          "aceItTip": {
+            "title": "Ace it: nursing management SAQs",
+            "tips": [
+              "For a 4-mark version, give the four highest priority points: sit upright, oxygen, bronchodilator, steroids (+ monitor).",
+              "For 13 marks, add rationale to every point and add the discharge teaching.",
+              "Always start with the airway and breathing. Examiners reward correct priorities.",
+              "Add 'as prescribed' to drugs. A nurse does not decide the dose."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_asthma_3",
+          "qNumber": "Q3",
+          "partId": "asthma",
+          "partTitle": "Asthma",
+          "tier": "Tier 1",
+          "topic": "Asthma",
+          "text": "State health messages you would give an asthmatic patient on discharge.",
+          "marks": 5,
+          "marksText": "3 to 5 marks, asked 2 times",
+          "frequencyText": "Tested in 9 of 12 papers · Asked 2 times",
+          "modelAnswer": {
+            "points": [
+              "Avoid triggers: smoke, dust, pollen, pets, cold air, strong smells; keep the home well ventilated and damp-free.",
+              "Take medication as prescribed: the preventer (steroid) daily even when well; carry the reliever (salbutamol) at all times.",
+              "Use inhaler with a spacer correctly; rinse the mouth after a steroid inhaler to prevent oral thrush.",
+              "Monitor peak flow and follow the written asthma action plan (green: well; yellow: worsening, increase reliever; red: emergency).",
+              "Recognise danger signs and return urgently: reliever not helping, cannot speak in sentences, lips turning blue, exhausted.",
+              "Stop smoking and avoid second-hand smoke; get the annual flu vaccine.",
+              "Attend follow-up (about 1 to 2 weeks) and keep a symptom diary."
+            ]
+          },
+          "memoryTips": [
+            "Memory tip: TRIGGERS — Triggers avoided · Reliever carried / Rinse mouth · Inhaler and spacer technique · Green-yellow-red plan · Go back early if worse · Environment clean and smoke-free · Review appointments and adherence · Stop smoking / Seasonal vaccines."
+          ],
+          "aceItTip": {
+            "title": "Ace it: health-message SAQs",
+            "tips": [
+              "Use the 6 D's: Disease understanding, Drugs, Diet, Daily living, Danger signs, Dates (follow-up).",
+              "Write the 3 or 5 that fit the condition. Only mention danger signs and drugs if you are short on points; they are the most 'examiner-liked'."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_asthma_4",
+          "qNumber": "Q4",
+          "partId": "asthma",
+          "partTitle": "Asthma",
+          "tier": "Tier 1",
+          "topic": "Asthma",
+          "text": "Describe the clinical manifestations of severe asthma.",
+          "marks": 5,
+          "marksText": "5 marks, asked 2 times",
+          "frequencyText": "Tested in 9 of 12 papers · Asked 2 times",
+          "modelAnswer": {
+            "subsections": [
+              {
+                "heading": "Typical features",
+                "points": [
+                  "Wheezing, first on expiration, then on both phases.",
+                  "Dyspnoea and chest tightness.",
+                  "Cough, often dry or with sticky sputum, worse at night or early morning."
+                ]
+              },
+              {
+                "heading": "Features of a severe attack",
+                "points": [
+                  "Cannot complete sentences; sits upright or leans forward.",
+                  "Tachypnoea and tachycardia; use of accessory muscles; intercostal recession; nasal flaring.",
+                  "Diaphoresis, anxiety and restlessness; pulsus paradoxus.",
+                  "Cyanosis; falling SpO₂; PEF below 50% of best."
+                ]
+              },
+              {
+                "heading": "Life-threatening signs",
+                "points": [
+                  "Silent chest (no wheeze because almost no air is moving), confusion or drowsiness, exhaustion, bradycardia."
+                ]
+              }
+            ]
+          },
+          "memoryTips": [
+            "Mild = 'WCC': Wheeze, Cough, Chest tightness.",
+            "Severe = 'Speech, Muscles, Blue': can't speak, accessory muscles, blue.",
+            "Silent chest is ominous, not reassuring. (Write this and the marker knows you understand.)"
+          ],
+          "aceItTip": {
+            "title": "Ace it: clinical manifestation SAQs",
+            "tips": [
+              "Order your points: symptoms → signs → late/severe signs.",
+              "For 'severe', put the danger signs last and mark them clearly."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_asthma_5",
+          "qNumber": "Q5",
+          "partId": "asthma",
+          "partTitle": "Asthma",
+          "tier": "Tier 1",
+          "topic": "Asthma",
+          "text": "List four factors that predispose a person to an asthmatic attack.",
+          "marks": 4,
+          "marksText": "4 marks",
+          "frequencyText": "Tested in 9 of 12 papers",
+          "modelAnswer": {
+            "points": [
+              "Allergens: house dust mite, pollen, animal dander, mould.",
+              "Respiratory infections (especially viral).",
+              "Exercise and cold air.",
+              "Smoke and air pollutants, strong odours, occupational dust or fumes.",
+              "Drugs: aspirin, NSAIDs, beta-blockers.",
+              "Emotional stress.",
+              "Host factors: family history, atopy (eczema, hay fever), gastro-oesophageal reflux."
+            ]
+          },
+          "memoryTips": [
+            "Memory tip: SPICED — Smoke · Pollen · Infection · Cold air · Exercise · Dust/dander. (Add drugs, emotion as extras.)"
+          ],
+          "aceItTip": {
+            "title": "Ace it: list questions",
+            "tips": [
+              "If the question says 'list four', give four plus one. Do not explain unless told to."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        }
+      ],
+      "block": "Block 1",
+      "category": "Respiratory Disorders"
+    },
+    {
+      "id": "pneumonia",
+      "partNumber": 3,
+      "title": "Pneumonia",
+      "shortTitle": "Pneumonia",
+      "condition": "Pneumonia",
+      "tier": "Tier 1",
+      "frequencyBadge": "Tested in 8 of 12 papers · Tier 1",
+      "frequencyRank": 3,
+      "description": "Pathophysiology, health messages, comprehensive nursing care, classifications, and risk factors.",
+      "questionCount": 5,
+      "questions": [
+        {
+          "id": "saq_pneumonia_1",
+          "qNumber": "Q1",
+          "partId": "pneumonia",
+          "partTitle": "Pneumonia",
+          "tier": "Tier 1",
+          "topic": "Pneumonia",
+          "text": "Describe the pathophysiology of pneumonia.",
+          "marks": 5,
+          "marksText": "4 to 5 marks, asked 2 times",
+          "frequencyText": "Tested in 8 of 12 papers · Asked 2 times",
+          "modelAnswer": {
+            "points": [
+              "Pathogens (bacteria such as Streptococcus pneumoniae, viruses, fungi) enter the lower respiratory tract by inhalation or aspiration, or from the blood, after defences are overwhelmed (reduced cough, impaired cilia, weak immunity).",
+              "Colonisation and inflammation: the organisms multiply in the alveoli; macrophages are overwhelmed and neutrophils are recruited.",
+              "Exudate: the alveoli fill with fluid, pus, fibrin and cells (consolidation); alveoli may stick together.",
+              "Impaired gas exchange: the fluid thickens the diffusion barrier → V/Q mismatch, hypoxaemia and reduced lung compliance.",
+              "Clinical result: fever, productive cough, pleuritic chest pain, dyspnoea, crackles and dullness on percussion."
+            ],
+            "contentSupport": "Flow supported by pneumonia pathophysiology evidence-based summaries."
+          },
+          "memoryTips": [
+            "\"Germs → Goo → Gas problem\": Germs reach the alveoli, goo (exudate) fills them, gas exchange fails."
+          ],
+          "aceItTip": {
+            "title": "Ace it: pathophysiology keywords",
+            "tips": [
+              "Same T-M-S-F-C template as asthma.",
+              "Mention consolidation and V/Q mismatch: they are the keywords examiners look for."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_pneumonia_2",
+          "qNumber": "Q2",
+          "partId": "pneumonia",
+          "partTitle": "Pneumonia",
+          "tier": "Tier 1",
+          "topic": "Pneumonia",
+          "text": "State health messages for a patient with pneumonia.",
+          "marks": 5,
+          "marksText": "3 to 5 marks, asked 2 times",
+          "frequencyText": "Tested in 8 of 12 papers · Asked 2 times",
+          "modelAnswer": {
+            "points": [
+              "Complete the full course of antibiotics even if feeling better.",
+              "Drink plenty of fluids and eat a nutritious diet.",
+              "Rest and increase activity gradually.",
+              "Deep breathing and coughing exercises; cover the mouth when coughing; wash hands.",
+              "Stop smoking and avoid alcohol; avoid crowded or smoky places during recovery.",
+              "Get vaccinated (pneumococcal and annual influenza vaccine) where available.",
+              "Return to hospital if fever returns, breathing worsens or chest pain/blue lips appear.",
+              "Attend follow-up, with a repeat chest X-ray if advised."
+            ]
+          },
+          "memoryTips": [
+            "Memory tip: \"Finish, Fluids, Fresh air, Fags (stop), Flu jab, Follow-up\": six F-words. Easy to recall at the exam desk."
+          ],
+          "aceItTip": {
+            "title": "Ace it: discharge instructions",
+            "tips": [
+              "Always include antibiotic compliance (preventing resistance/relapse) and red flags/danger signs for immediate return."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_pneumonia_3",
+          "qNumber": "Q3",
+          "partId": "pneumonia",
+          "partTitle": "Pneumonia",
+          "tier": "Tier 1",
+          "topic": "Pneumonia",
+          "text": "Describe the nursing care of a patient with pneumonia from admission to discharge.",
+          "marks": 12,
+          "marksText": "5 to 12 marks, asked 2 times",
+          "frequencyText": "Tested in 8 of 12 papers · Asked 2 times",
+          "modelAnswer": {
+            "points": [
+              "Position upright or semi-Fowler's to maximise lung expansion.",
+              "Oxygen as prescribed; monitor SpO₂ and respiratory rate.",
+              "Nebulise/humidify and give prescribed bronchodilators or mucolytics.",
+              "Encourage fluids (2 to 3 L/day unless contraindicated) and record fluid balance.",
+              "Medicate: collect sputum for culture before antibiotics; give antibiotics on time; give antipyretics and analgesia.",
+              "Monitor vitals, SpO₂, chest sounds and LOC for deterioration; watch for sepsis, pleural effusion, respiratory failure.",
+              "Chest physiotherapy: deep breathing, coughing, incentive spirometry; suction if unable to clear secretions.",
+              "Oral care and personal hygiene.",
+              "Nutrition: small frequent high-calorie, high-protein meals.",
+              "Infection control: hand hygiene, disposal of sputum, isolate if indicated (e.g. suspected TB).",
+              "Rest and reassurance: cluster care to conserve energy.",
+              "Prepare for discharge: teach medications and follow-up."
+            ],
+            "contentSupport": "Care elements match standard medical-surgical nursing interventions (humidified oxygen, deep breathing, comfort position, fluids, fever control, antibiotics, vaccines)."
+          },
+          "memoryTips": [
+            "Memory tip: PNEUMONIA"
+          ],
+          "mnemonics": [
+            {
+              "title": "PNEUMONIA Mnemonic",
+              "summary": "Position upright · Nebulise/oxygen · Encourage fluids · Use antibiotics (culture first) · Monitor vitals/SpO₂ · Oral care · Nutrition · Infection control · Antipyretics and analgesia."
+            }
+          ],
+          "aceItTip": {
+            "title": "Ace it: comprehensive nursing care",
+            "tips": [
+              "For a 12-mark question add headings: Assessment → Airway and breathing → Medication → Supportive care → Prevention of complications → Discharge teaching.",
+              "For a 5-mark question give the first five letters of PNEUMONIA that apply."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_pneumonia_4",
+          "qNumber": "Q4",
+          "partId": "pneumonia",
+          "partTitle": "Pneumonia",
+          "tier": "Tier 1",
+          "topic": "Pneumonia",
+          "text": "List four types of pneumonia.",
+          "marks": 2,
+          "marksText": "2 marks",
+          "frequencyText": "Tested in 8 of 12 papers",
+          "modelAnswer": {
+            "points": [
+              "Community-acquired pneumonia (CAP)",
+              "Hospital-acquired pneumonia (HAP) (including ventilator-associated pneumonia, VAP)",
+              "Aspiration pneumonia",
+              "Pneumonia in the immunocompromised host",
+              "(Also by organism: bacterial, viral, fungal, atypical; by anatomy: lobar, bronchopneumonia.)"
+            ],
+            "contentSupport": "Classification supported by WTCS Pressbooks."
+          },
+          "memoryTips": [
+            "Memory tip: \"CHAI\": Community, Hospital, Aspiration, Immunocompromised. Say 'chai' and you have four marks."
+          ],
+          "aceItTip": {
+            "title": "Ace it: classification",
+            "tips": [
+              "Mentioning the clinical setting (CAP/HAP/Aspiration) is the standard nursing exam expected answer."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_pneumonia_5",
+          "qNumber": "Q5",
+          "partId": "pneumonia",
+          "partTitle": "Pneumonia",
+          "tier": "Tier 1",
+          "topic": "Pneumonia",
+          "text": "List five risk factors for development of pneumonia.",
+          "marks": 5,
+          "marksText": "5 marks",
+          "frequencyText": "Tested in 8 of 12 papers",
+          "modelAnswer": {
+            "points": [
+              "Extremes of age (infants and the elderly).",
+              "Smoking and alcohol.",
+              "Weak immunity: HIV/AIDS, steroids, malnutrition, cancer.",
+              "Chronic illness: COPD, diabetes, heart failure.",
+              "Aspiration risk: unconsciousness, stroke, swallowing difficulty.",
+              "Immobility, post-op state and intubation/ventilation.",
+              "Recent viral URTI/influenza; overcrowding, indoor smoke."
+            ]
+          },
+          "memoryTips": [
+            "Memory tip: the 3 H's: Habits (smoking, alcohol) · Host (age, immunity, chronic disease) · Hazards/Hospital (aspiration, immobility, intubation, surgery)."
+          ],
+          "aceItTip": {
+            "title": "Ace it: risk factor grouping",
+            "tips": [
+              "Use the 3 H's: Host, Habits, Hazards. It ensures you don't list five variations of the same category."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        }
+      ],
+      "block": "Block 1",
+      "category": "Respiratory Disorders"
+    },
+    {
+      "id": "copd",
+      "partNumber": 4,
+      "title": "Chronic Bronchitis & COPD",
+      "shortTitle": "Chronic Bronchitis / COPD",
+      "condition": "Chronic Bronchitis & COPD",
+      "tier": "Tier 1",
+      "frequencyBadge": "Tested in 6 of 12 papers · Tier 1",
+      "frequencyRank": 4,
+      "description": "Diagnostic definition, pathophysiology chain, discharge health messages, Blue Bloater features, and ward pharmacotherapy.",
+      "questionCount": 4,
+      "questions": [
+        {
+          "id": "saq_copd_1",
+          "qNumber": "Q1",
+          "partId": "copd",
+          "partTitle": "Chronic Bronchitis & COPD",
+          "tier": "Tier 1",
+          "topic": "Chronic Bronchitis / COPD",
+          "text": "Describe the pathophysiology of chronic bronchitis.",
+          "marks": 5,
+          "marksText": "4 to 5 marks, asked 3 times, overdue",
+          "frequencyText": "Tested in 6 of 12 papers · Asked 3 times (overdue)",
+          "modelAnswer": {
+            "intro": "Definition: a productive cough on most days for at least 3 months in each of 2 consecutive years, with other causes excluded.",
+            "points": [
+              "Chronic irritation (most often cigarette smoke; also dust, fumes, repeated infection) inflames the bronchial walls.",
+              "Mucus gland and goblet cell hyperplasia → excess, thick mucus.",
+              "Cilia are damaged and paralysed → mucus is not cleared → mucus plugs and recurrent infection.",
+              "Bronchial wall inflammation, oedema and fibrosis thicken the walls and narrow the airways → airflow obstruction, wheeze, mucus trapping.",
+              "V/Q mismatch → hypoxaemia, hypercapnia and cyanosis; chronic hypoxia → pulmonary hypertension and right-sided heart failure (cor pulmonale)."
+            ],
+            "contentSupport": "Supported by the clinical picture described in Picmonic: chronic bronchitis assessment (cough >3 months for 2 years, mucus, dyspnoea, cyanosis, right heart failure)."
+          },
+          "memoryTips": [
+            "\"3 and 2\": 3 months, 2 years (definition).",
+            "Blue Bloater: Bronchitis has a B → Blue Bloater: blue (cyanosed), bloated (oedema from right heart failure) (Knowmedge).",
+            "Chain to learn: Irritant → Goo → Gummed-up cilia → Narrow tubes → Low oxygen → Heart strain.",
+            "Note: 'blue bloater' and 'pink puffer' are older descriptive terms; most patients have a mix, but the labels are still tested in exams."
+          ],
+          "aceItTip": {
+            "title": "Ace it: chronic bronchitis questions",
+            "tips": [
+              "For 'pathophysiology of chronic bronchitis' always put the definition first (it is usually 1 mark), then the mechanism, then the complications (cor pulmonale)."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_copd_2",
+          "qNumber": "Q2",
+          "partId": "copd",
+          "partTitle": "Chronic Bronchitis & COPD",
+          "tier": "Tier 1",
+          "topic": "Chronic Bronchitis / COPD",
+          "text": "State health messages for a patient with chronic bronchitis / COPD.",
+          "marks": 5,
+          "marksText": "2 to 5 marks, asked 3 times",
+          "frequencyText": "Tested in 6 of 12 papers · Asked 3 times",
+          "modelAnswer": {
+            "points": [
+              "Stop smoking and avoid second-hand smoke and other irritants (the single most important measure).",
+              "Take medicines exactly as prescribed; use inhalers correctly.",
+              "Practise pursed-lip breathing and diaphragmatic breathing; use the tripod position during breathlessness.",
+              "Get the annual influenza vaccine and the pneumococcal vaccine.",
+              "Eat a balanced diet, small frequent meals, and drink adequate fluids to thin mucus.",
+              "Exercise within limits; pace activities and conserve energy; join pulmonary rehabilitation if available.",
+              "Report early signs of an exacerbation: more breathlessness, change in sputum colour or amount, fever.",
+              "Avoid infections: hand washing, avoid crowds and sick contacts.",
+              "Use oxygen only as prescribed (do not increase the flow on your own).",
+              "Attend regular follow-up."
+            ],
+            "contentSupport": "Aligned with COPD self-care guidance and readmission-prevention clinical reviews."
+          },
+          "memoryTips": [
+            "Memory tip: \"SPEED\": Stop smoking · Pursed-lip breathing · Exercise and energy saving · Early report of exacerbation (sputum change) · Drugs, vaccines and diet."
+          ],
+          "aceItTip": {
+            "title": "Ace it: mark sizing",
+            "tips": [
+              "For 2 marks, give only the top two: stop smoking and take medication correctly.",
+              "For 5 marks, SPEED gives five points straight away."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_copd_3",
+          "qNumber": "Q3",
+          "partId": "copd",
+          "partTitle": "Chronic Bronchitis & COPD",
+          "tier": "Tier 1",
+          "topic": "Chronic Bronchitis / COPD",
+          "text": "Describe the clinical features of a patient who has had chronic bronchitis since childhood.",
+          "marks": 4,
+          "marksText": "4 marks",
+          "frequencyText": "Tested in 6 of 12 papers",
+          "modelAnswer": {
+            "points": [
+              "Chronic productive cough, worst in the morning, with mucoid or purulent sputum.",
+              "Dyspnoea, first on exertion and later at rest.",
+              "Wheezing and use of accessory muscles.",
+              "Cyanosis (central) and a stocky/bloated appearance.",
+              "Frequent chest infections (exacerbations).",
+              "Signs of right heart failure: raised jugular venous pressure, peripheral oedema.",
+              "Clubbing and polycythaemia (in advanced disease); coarse crackles on auscultation."
+            ],
+            "contentSupport": "A childhood-onset history should also make you think of bronchiectasis or cystic fibrosis; mention this if the question stem hints at it."
+          },
+          "memoryTips": [
+            "Remember \"Blue Bloater\" = Blue (cyanosis) + Bloated (oedema/JVP) + the Wet cough (sputum)."
+          ],
+          "aceItTip": {
+            "title": "Ace it: childhood onset hint",
+            "tips": [
+              "If the question specifies 'since childhood', ensure you highlight chronic sputum, frequent exacerbations, and cor pulmonale."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_copd_4",
+          "qNumber": "Q4",
+          "partId": "copd",
+          "partTitle": "Chronic Bronchitis & COPD",
+          "tier": "Tier 1",
+          "topic": "Chronic Bronchitis / COPD",
+          "text": "Name four drugs a patient with COPD may benefit from on the ward.",
+          "marks": 4,
+          "marksText": "2 to 4 marks",
+          "frequencyText": "Tested in 6 of 12 papers",
+          "modelAnswer": {
+            "points": [
+              "Bronchodilators: salbutamol (short-acting beta-2 agonist), ipratropium (anticholinergic).",
+              "Corticosteroids: prednisolone (in exacerbations) or inhaled steroids.",
+              "Antibiotics for infective exacerbations (e.g. amoxicillin, doxycycline).",
+              "Oxygen (controlled, low-flow, e.g. 24 to 28% via Venturi mask).",
+              "Mucolytics (e.g. carbocisteine) and diuretics if right heart failure."
+            ]
+          },
+          "memoryTips": [
+            "Memory tip: \"BOSA\": Bronchodilators · Oxygen (controlled) · Steroids · Antibiotics. (Add mucolytics, diuretics.)"
+          ],
+          "aceItTip": {
+            "title": "Ace it: pharmacological precision",
+            "tips": [
+              "Always write drug class + one example: it shows you know the group and the specific drug.",
+              "Say 'controlled oxygen': high-flow oxygen can blunt the hypoxic drive in chronic CO₂ retainers."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        }
+      ],
+      "block": "Block 1",
+      "category": "Respiratory Disorders"
+    },
+    {
+      "id": "thoracic-surgery",
+      "partNumber": 5,
+      "title": "Thoracic Surgery",
+      "shortTitle": "Thoracic Surgery",
+      "condition": "Thoracic Surgery",
+      "tier": "Tier 2",
+      "frequencyBadge": "Tested in 5 of 12 papers · Tier 2",
+      "frequencyRank": 5,
+      "description": "Post-pneumonectomy care, pre-operative preparation, post-thoracotomy care, and lobectomy discharge teaching.",
+      "questionCount": 4,
+      "questions": [
+        {
+          "id": "saq_surgery_1",
+          "qNumber": "Q1",
+          "partId": "thoracic-surgery",
+          "partTitle": "Thoracic Surgery",
+          "tier": "Tier 2",
+          "topic": "Thoracic Surgery",
+          "text": "Outline five nursing interventions after a (left) pneumonectomy.",
+          "marks": 5,
+          "marksText": "5 marks, asked 3 times; up to 11 marks as a long question",
+          "frequencyText": "Tested in 5 of 12 papers · Asked 3 times (Oct 2025)",
+          "modelAnswer": {
+            "points": [
+              "Airway and breathing: monitor RR, SpO₂, breath sounds and signs of mediastinal shift (tracheal deviation, respiratory distress, hypotension); give oxygen as prescribed.",
+              "Positioning: semi-Fowler's/supine as ordered; avoid lying on the un-operated side (see note below).",
+              "Chest drain (if present): never clamp or milk a pneumonectomy drain; keep the system closed and below chest level; follow the surgeon's orders. In many pneumonectomies the drain is clamped/unclamped only on surgical order, or not used.",
+              "Cardiovascular monitoring: watch pulse, BP and ECG for arrhythmias (especially atrial fibrillation); monitor and restrict IV fluids to avoid pulmonary oedema in the remaining lung; record urine output.",
+              "Pain relief: give analgesia (PCA/epidural) on time so the patient can breathe deeply and cough.",
+              "Chest physiotherapy: deep breathing, coughing, incentive spirometry; early ambulation.",
+              "Exercises: arm and shoulder range-of-motion on the operated side to prevent a frozen shoulder.",
+              "Wound care and infection prevention: inspect the dressing; watch for bronchopleural fistula (sudden cough with frothy sputum) and empyema.",
+              "Nutrition and psychological support."
+            ],
+            "contentSupport": "Supported by CTSNet surgical guidance, N-Prep, WikiAnesthesia, and ICOUGH protocol."
+          },
+          "warningNotice": "⚠️ Positioning: sources differ. Many Indian and older textbook questions say 'lie on the operated side or on the back; never on the un-operated side', to avoid pushing the mediastinum toward the empty side. Some modern anaesthesia and surgical sources advise avoiding lying with the operated side down. The safe exam answer is 'position as the surgeon orders (usually semi-Fowler's or supine); avoid extreme lateral positions to prevent mediastinal shift.' Use your own college notes if they say otherwise.",
+          "memoryTips": [
+            "Memory tip: ABCDE + P"
+          ],
+          "mnemonics": [
+            {
+              "title": "ABCDE + P Mnemonic",
+              "table": {
+                "headers": [
+                  "Letter",
+                  "Meaning"
+                ],
+                "rows": [
+                  [
+                    "A",
+                    "Airway: secretions, suction"
+                  ],
+                  [
+                    "B",
+                    "Breathing: SpO₂, mediastinal shift, positioning"
+                  ],
+                  [
+                    "C",
+                    "Circulation: arrhythmias, fluid restriction"
+                  ],
+                  [
+                    "D",
+                    "Drain: never clamp (or clamp only on order)"
+                  ],
+                  [
+                    "E",
+                    "Exercise: breathing, arm and leg exercises, mobilise"
+                  ],
+                  [
+                    "P",
+                    "Pain control"
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "ICOUGH protocol (Boston Medical Center)",
+              "summary": "Incentive spirometry, Cough and deep breathe, Oral care, Understanding (patient education), Get out of bed, Head-of-bed elevation."
+            }
+          ],
+          "aceItTip": {
+            "title": "Ace it: surgical care questions",
+            "tips": [
+              "Choose five distinct systems (airway, breathing, circulation, drain, pain). Never give five points that all say 'breathing'.",
+              "'Never clamp the pneumonectomy drain' is the high-value point; underline it.",
+              "For the 11-mark post-op care version, add pre-op preparation, immediate post-op, days 1 to 3, and discharge."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_surgery_2",
+          "qNumber": "Q2",
+          "partId": "thoracic-surgery",
+          "partTitle": "Thoracic Surgery",
+          "tier": "Tier 2",
+          "topic": "Thoracic Surgery",
+          "text": "Describe the pre-operative care of a patient scheduled for pneumonectomy.",
+          "marks": 4,
+          "marksText": "4 marks",
+          "frequencyText": "Tested in 5 of 12 papers",
+          "modelAnswer": {
+            "points": [
+              "Explain the surgery, expected drains, pain control and recovery; obtain informed consent.",
+              "Teach and practise deep breathing, coughing, incentive spirometry, and arm and leg exercises.",
+              "Stop smoking (ideally as early as possible).",
+              "Optimise health: treat chest infection, correct nutrition and anaemia; baseline lung function tests, ABG and chest X-ray.",
+              "Routine pre-op: NPO, skin preparation, IV access, group and cross-match, premedication as ordered.",
+              "Psychological support for fear and anxiety."
+            ]
+          },
+          "memoryTips": [
+            "\"Teach, Stop smoking, Test, Prepare\": Teach the exercises, Stop smoking, Test (PFTs, ABG), Prepare (NPO, consent)."
+          ],
+          "aceItTip": {
+            "title": "Ace it: pre-op priorities",
+            "tips": [
+              "Emphasise teaching post-op chest exercises BEFORE surgery so the patient knows how to perform them while recovering."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_surgery_3",
+          "qNumber": "Q3",
+          "partId": "thoracic-surgery",
+          "partTitle": "Thoracic Surgery",
+          "tier": "Tier 2",
+          "topic": "Thoracic Surgery",
+          "text": "Describe the nursing care after thoracotomy.",
+          "marks": 10,
+          "marksText": "up to 10 marks",
+          "frequencyText": "Tested in 5 of 12 papers",
+          "modelAnswer": {
+            "intro": "Use the ABCDE + P structure from Q1, noting key differences:",
+            "points": [
+              "Chest drains are expected after a lobectomy or thoracotomy (to re-expand the lung): use the full chest-drain care in UWSD (TUBES) and monitor for air leak and bleeding.",
+              "Respiratory care: oxygen, positioning, deep breathing, incentive spirometry, suction.",
+              "Pain control: epidural/PCA; splint the incision when coughing.",
+              "Shoulder exercises on the operated side to prevent frozen shoulder.",
+              "Monitor for complications: haemorrhage, air leak/pneumothorax, atelectasis, pneumonia, arrhythmias, wound infection.",
+              "Early mobilisation and nutrition; psychological support."
+            ]
+          },
+          "memoryTips": [
+            "Use ABCDE + P with special focus on chest drain management (TUBES)."
+          ],
+          "aceItTip": {
+            "title": "Ace it: thoracotomy vs pneumonectomy",
+            "tips": [
+              "If the question says 'after thoracotomy', the chest drain is the headline (it is routinely present), unlike pneumonectomy where its management differs. Show you know the difference."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_surgery_4",
+          "qNumber": "Q4",
+          "partId": "thoracic-surgery",
+          "partTitle": "Thoracic Surgery",
+          "tier": "Tier 2",
+          "topic": "Thoracic Surgery",
+          "text": "State health messages after a left lobectomy.",
+          "marks": 3,
+          "marksText": "3 marks",
+          "frequencyText": "Tested in 5 of 12 papers",
+          "modelAnswer": {
+            "points": [
+              "Continue breathing and arm exercises at home; walk daily and gradually increase activity.",
+              "Avoid heavy lifting and strenuous activity for several weeks (as the surgeon advises).",
+              "Take pain medicine as prescribed; keep the wound clean and dry; report redness, discharge or fever.",
+              "Do not smoke and avoid smoky places.",
+              "Report worsening breathlessness, chest pain, coughing blood or fever.",
+              "Eat well, rest and keep follow-up appointments."
+            ]
+          },
+          "memoryTips": [
+            "Use the 6 D's: Drugs (pain), Diet, Daily living (lifting limit, walking), Danger signs, Dates (follow-up), plus do not smoke."
+          ],
+          "aceItTip": {
+            "title": "Ace it: lobectomy discharge",
+            "tips": [
+              "Always include shoulder ROM exercises and lifting restrictions alongside general surgical wound care."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        }
+      ],
+      "block": "Block 1",
+      "category": "Respiratory Disorders"
+    },
+    {
+      "id": "due-conditions",
+      "partNumber": 6,
+      "title": "Single-Appearance & Due Conditions",
+      "shortTitle": "Due Conditions",
+      "condition": "Due Conditions",
+      "tier": "Tier 3",
+      "frequencyBadge": "Tier 3 · Due in SAQs",
+      "frequencyRank": 6,
+      "description": "High-yield topics with frequent MCQ presence where an SAQ is overdue: Flail Chest, Atelectasis, Bronchiectasis, Emphysema, Lung Cancer, Assessment Findings, Gas Transport, and Breathing Control.",
+      "questionCount": 8,
+      "questions": [
+        {
+          "id": "saq_due_1",
+          "qNumber": "Q1",
+          "partId": "due-conditions",
+          "partTitle": "Single-Appearance & Due Conditions",
+          "tier": "Tier 3",
+          "topic": "Flail Chest",
+          "text": "Explain the mechanics of flail chest.",
+          "marks": 5,
+          "marksText": "5 marks",
+          "frequencyText": "Frequent in MCQs · SAQ is overdue",
+          "modelAnswer": {
+            "points": [
+              "Cause: severe blunt chest trauma (road traffic accident, fall, crush, CPR) fractures three or more adjacent ribs, each in two or more places.",
+              "Result: a free-floating segment that is no longer attached to the rest of the chest wall.",
+              "On inspiration: the diaphragm and intercostals expand the chest and create negative intrathoracic pressure; the unstable segment is sucked inward (paradoxical movement).",
+              "On expiration: pressure becomes positive and the segment bulges outward.",
+              "Effects: reduced effective ventilation, hypoxaemia, increased dead space, pain with splinting and shallow breathing, secretion retention and pneumonia. A pulmonary contusion underneath is usually the main cause of hypoxia."
+            ],
+            "contentSupport": "Supported by Osmosis flail chest, JoVE and StatPearls."
+          },
+          "memoryTips": [
+            "\"In when you breathe IN, out when you breathe OUT\" = the opposite of the normal chest. \"Paradoxical\" = \"wrong way round\".",
+            "3 + 2 = 3 or more ribs broken in 2 or more places.",
+            "Management in one line: Oxygen, Pain relief, Splint, Physio, Ventilate if needed."
+          ],
+          "aceItTip": {
+            "title": "Ace it: paradoxical breathing",
+            "tips": [
+              "Draw a small inset sketch of the chest with arrows (inward on inspiration, outward on expiration). It reinforces the answer and often earns a mark."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_due_2",
+          "qNumber": "Q2",
+          "partId": "due-conditions",
+          "partTitle": "Single-Appearance & Due Conditions",
+          "tier": "Tier 3",
+          "topic": "Atelectasis",
+          "text": "Describe the pathophysiology of atelectasis.",
+          "marks": 5,
+          "marksText": "5 marks",
+          "frequencyText": "Single appearance · High frequency concept",
+          "modelAnswer": {
+            "points": [
+              "Definition: collapse of alveoli in part or all of a lung.",
+              "Causes: obstruction (mucus plug, foreign body, tumour), compression (pleural effusion, pneumothorax), or loss of surfactant/shallow breathing (post-operative pain, immobility, obesity).",
+              "Mechanism: air distal to the blockage is absorbed into the blood and the alveoli collapse.",
+              "Effects: reduced lung volume; blood passes the collapsed alveoli without being oxygenated (shunt) → hypoxaemia.",
+              "Consequence: stagnant secretions → infection and pneumonia."
+            ],
+            "contentSupport": "Supported by Osmosis: atelectasis."
+          },
+          "memoryTips": [
+            "\"Block → Absorb → Collapse → Shunt\". Prevention = ICOUGH protocol."
+          ],
+          "aceItTip": {
+            "title": "Ace it: shunt mechanism",
+            "tips": [
+              "Remember to mention pulmonary shunt: unoxygenated blood bypasses non-ventilated alveoli, leading to refractory hypoxaemia."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_due_3",
+          "qNumber": "Q3",
+          "partId": "due-conditions",
+          "partTitle": "Single-Appearance & Due Conditions",
+          "tier": "Tier 3",
+          "topic": "Bronchiectasis",
+          "text": "Describe the pathophysiology of bronchiectasis.",
+          "marks": 5,
+          "marksText": "5 marks",
+          "frequencyText": "Single appearance · High frequency concept",
+          "modelAnswer": {
+            "points": [
+              "Definition: permanent abnormal dilatation of the bronchi.",
+              "Initiating cause: recurrent or severe infection (post-infectious, TB, pertussis), airway obstruction, cystic fibrosis, immune deficiency or ciliary defect.",
+              "Inflammation damages the elastic and muscular layers of the bronchial wall.",
+              "The weakened wall dilates permanently; mucociliary clearance fails.",
+              "Mucus pools → chronic infection → more inflammation: a vicious cycle.",
+              "Clinical result: chronic cough with large volumes of foul sputum, haemoptysis, recurrent chest infections and clubbing."
+            ]
+          },
+          "memoryTips": [
+            "Causes: \"CAPT Kangaroo has Mounier-Kuhn\" (Radiopaedia): Cystic fibrosis · Allergic bronchopulmonary aspergillosis · Post-infectious (most common) · Tuberculosis · Kartagener syndrome · Mounier-Kuhn syndrome.",
+            "Mechanism: the \"3 I's cycle\": Infection → Inflammation → Impaired clearance → back to infection."
+          ],
+          "aceItTip": {
+            "title": "Ace it: vicious cycle",
+            "tips": [
+              "Highlight the irreversible destruction of elastic/muscular components and the self-perpetuating infection-inflammation cycle."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_due_4",
+          "qNumber": "Q4",
+          "partId": "due-conditions",
+          "partTitle": "Single-Appearance & Due Conditions",
+          "tier": "Tier 3",
+          "topic": "Pulmonary Emphysema",
+          "text": "Describe the clinical features of pulmonary emphysema.",
+          "marks": 4,
+          "marksText": "4 marks",
+          "frequencyText": "Single appearance · High frequency concept",
+          "modelAnswer": {
+            "points": [
+              "Progressive dyspnoea, at first on exertion.",
+              "Barrel-shaped chest (hyperinflation) and prolonged expiration.",
+              "Pursed-lip breathing and use of accessory muscles; tripod position.",
+              "Thin, wasted appearance (weight loss from increased work of breathing).",
+              "Hyper-resonant percussion, diminished breath sounds; minimal cough or sputum.",
+              "Pink skin early (hence 'pink puffer'); cyanosis only late."
+            ],
+            "contentSupport": "Explanation: in emphysema the alveoli are destroyed and lose elastic recoil, so air is trapped; inhalation is easier than exhalation."
+          },
+          "memoryTips": [
+            "Memory tip: PUFFER: Pursed lips · Underweight · Fast breathing (tachypnoea) · Fixed barrel chest · Expiration prolonged · Resonant (hyper-resonant) chest.",
+            "emPhysema has a P → Pink Puffer (Knowmedge)."
+          ],
+          "aceItTip": {
+            "title": "Ace it: emphysema vs chronic bronchitis",
+            "tips": [
+              "Contrast with Blue Bloater: emphysema patients are pink, thin, hyperinflated, with minimal sputum and late-onset cyanosis."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_due_5",
+          "qNumber": "Q5",
+          "partId": "due-conditions",
+          "partTitle": "Single-Appearance & Due Conditions",
+          "tier": "Tier 3",
+          "topic": "Lung Cancer",
+          "text": "List five risk factors for lung cancer.",
+          "marks": 5,
+          "marksText": "5 marks",
+          "frequencyText": "Single appearance · High frequency concept",
+          "modelAnswer": {
+            "points": [
+              "Smoking (active and passive): responsible for most cases (around 85% in smokers according to Clinical Journal of Oncology Nursing).",
+              "Radon gas exposure.",
+              "Asbestos and occupational carcinogens (silica, arsenic, nickel, chromium).",
+              "Air pollution and indoor biomass smoke (wood or charcoal cooking fires).",
+              "Family history/genetic susceptibility.",
+              "Previous lung disease (COPD, TB scarring, pulmonary fibrosis) and increasing age."
+            ]
+          },
+          "memoryTips": [
+            "Memory tip: RASP + F: Radon · Asbestos · Smoking · Pollution · Family history."
+          ],
+          "aceItTip": {
+            "title": "Ace it: quick marks",
+            "tips": [
+              "The '5 marks' are easy marks: always give smoking first. If you have time add a short line: 'avoidance of smoking is the main preventive measure'."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_due_6",
+          "qNumber": "Q6",
+          "partId": "due-conditions",
+          "partTitle": "Single-Appearance & Due Conditions",
+          "tier": "Tier 3",
+          "topic": "Assessment Findings",
+          "text": "State five assessment findings in a patient with a respiratory disorder.",
+          "marks": 5,
+          "marksText": "5 marks",
+          "frequencyText": "Single appearance · Core clinical skill",
+          "modelAnswer": {
+            "points": [
+              "Abnormal respiratory rate, depth or pattern (tachypnoea, bradypnoea, laboured breathing).",
+              "Use of accessory muscles, nasal flaring, intercostal or sternal recession.",
+              "Cough and sputum (amount, colour, blood), and chest pain.",
+              "Signs of hypoxia: cyanosis, low SpO₂, restlessness or confusion, tachycardia.",
+              "Abnormal breath sounds: wheeze, crackles, diminished or absent sounds.",
+              "Chest shape/movement (barrel chest, paradoxical movement) and finger clubbing."
+            ]
+          },
+          "memoryTips": [
+            "Memory tip: RACES: Rate and rhythm of breathing · Accessory muscle use · Cough/sputum · Evidence of hypoxia (cyanosis, SpO₂, confusion) · Sounds (wheeze/crackles)."
+          ],
+          "aceItTip": {
+            "title": "Ace it: assessment findings vs actions",
+            "tips": [
+              "Examiners want findings (what you see, hear, measure), not nursing actions.",
+              "Use the order Inspect → Palpate → Percuss → Auscultate, then add SpO₂."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_due_7",
+          "qNumber": "Q7",
+          "partId": "due-conditions",
+          "partTitle": "Single-Appearance & Due Conditions",
+          "tier": "Tier 3",
+          "topic": "Gas Transport",
+          "text": "Describe how respiratory gases are transported in the blood.",
+          "marks": 5,
+          "marksText": "5 marks",
+          "frequencyText": "Single appearance · High yield physiology",
+          "modelAnswer": {
+            "subsections": [
+              {
+                "heading": "Oxygen transport",
+                "points": [
+                  "About 98.5% bound to haemoglobin as oxyhaemoglobin (each Hb carries up to 4 O₂); this is the main route.",
+                  "About 1.5% dissolved in plasma."
+                ]
+              },
+              {
+                "heading": "Carbon dioxide transport",
+                "points": [
+                  "About 70% as bicarbonate (HCO₃⁻): CO₂ + H₂O → H₂CO₃ (carbonic anhydrase in red cells) → H⁺ + HCO₃⁻; bicarbonate moves into plasma in exchange for chloride (chloride shift).",
+                  "About 20 to 23% as carbaminohaemoglobin (bound to Hb and plasma proteins).",
+                  "About 7% dissolved in plasma."
+                ]
+              }
+            ],
+            "contentSupport": "Figures vary by source (bicarbonate 70 to 80%, dissolved CO₂ 5 to 10%). Use 'about' and give approximate percentages."
+          },
+          "memoryTips": [
+            "\"O₂ hitchhikes on Hb. CO₂ takes the Bicarbonate bus.\"",
+            "98 / 2 for oxygen (bound / dissolved); 70 / 23 / 7 for CO₂ (bicarbonate / carbamino / dissolved)."
+          ],
+          "aceItTip": {
+            "title": "Ace it: exact percentages",
+            "tips": [
+              "Always split the answer into Oxygen (2 forms) and Carbon Dioxide (3 forms). Mention carbonic anhydrase and chloride shift for maximum marks."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        },
+        {
+          "id": "saq_due_8",
+          "qNumber": "Q8",
+          "partId": "due-conditions",
+          "partTitle": "Single-Appearance & Due Conditions",
+          "tier": "Tier 3",
+          "topic": "Respiratory Control",
+          "text": "State two factors that influence the rate of breathing.",
+          "marks": 2,
+          "marksText": "2 marks",
+          "frequencyText": "Single appearance · Core physiology",
+          "modelAnswer": {
+            "points": [
+              "Blood chemistry: a rise in CO₂ (fall in pH) is the strongest stimulus; a fall in O₂ (hypoxia) also increases the rate via chemoreceptors.",
+              "Exercise, emotion, pain, fever, altitude and drugs (opioids reduce the rate)."
+            ]
+          },
+          "memoryTips": [
+            "\"CO₂ drives, O₂ backs up.\" The main driver is carbon dioxide; oxygen is the back-up. Anything that raises metabolism (exercise, fever) raises the rate."
+          ],
+          "aceItTip": {
+            "title": "Ace it: primary vs secondary stimulus",
+            "tips": [
+              "Note that arterial PCO₂ / hydrogen ion concentration (central chemoreceptors in the medulla) is the primary driver, while PO₂ (carotid/aortic peripheral chemoreceptors) acts as secondary drive."
+            ]
+          },
+          "block": "Block 1",
+          "category": "Respiratory Disorders"
+        }
+      ],
+      "block": "Block 1",
+      "category": "Respiratory Disorders"
+    }
+  ],
+  "block": "Block 1",
+  "category": "Respiratory Disorders"
+}
