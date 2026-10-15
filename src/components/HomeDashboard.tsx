@@ -18,15 +18,16 @@ import {
   AlertCircle,
   RotateCcw,
   Trash2,
-  X
+  X,
+  GraduationCap
 } from 'lucide-react';
-import { SessionProgress } from '../types';
+import { SessionProgress, AppNavTab } from '../types';
 import { getPaperMetrics, getActivityLog, parseSetKey } from '../utils/storage';
-import { PAST_PAPERS, findPaper } from '../data/questions';
+import { PAST_PAPERS, findPaper, BOARD_PAST_PAPERS, TNH_PRACTICE_PAPERS } from '../data/questions';
 
 interface HomeDashboardProps {
   progress: SessionProgress;
-  onNavigate: (tab: 'home' | 'papers' | 'review') => void;
+  onNavigate: (tab: AppNavTab) => void;
   onContinueSet: (paperId: string, setId: string) => void;
   onClearProgress: () => void;
 }
@@ -101,23 +102,53 @@ export default function HomeDashboard({
         </button>
       )}
 
-      {/* 3. Quick Access Navigation Tiles (Clean titles, no subtitles) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5">
+      {/* 3. Quick Access Navigation Tiles */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-3.5">
         {/* Past Papers Tile */}
         <button
           onClick={() => onNavigate('papers')}
-          className="bg-white rounded-2xl border border-slate-200/90 hover:border-[#0B1B3D] p-4 sm:p-4.5 flex justify-between items-center transition-all text-left group min-h-[64px] shadow-2xs hover:shadow-xs active:scale-[0.99] cursor-pointer"
+          className="bg-white rounded-2xl border border-slate-200/90 hover:border-[#0B1B3D] p-3.5 sm:p-4 flex justify-between items-center transition-all text-left group min-h-[64px] shadow-2xs hover:shadow-xs active:scale-[0.99] cursor-pointer"
         >
-          <div className="flex items-center gap-3.5 min-w-0">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 bg-indigo-50 flex items-center justify-center text-[#0B1B3D] rounded-xl shrink-0">
-              <BookOpen className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="w-9 h-9 rounded-xl bg-indigo-50 flex items-center justify-center text-[#0B1B3D] shrink-0">
+              <BookOpen className="w-4.5 h-4.5" />
             </div>
-            <h2 className="font-bold text-sm sm:text-base text-slate-900 group-hover:text-[#0B1B3D] transition-colors leading-snug truncate">
-              Past Papers
-            </h2>
+            <div className="min-w-0">
+              <h2 className="font-bold text-sm text-slate-900 group-hover:text-[#0B1B3D] transition-colors leading-snug truncate">
+                Past Papers
+              </h2>
+              <p className="text-[11px] font-medium text-slate-500 truncate mt-0.5">
+                {BOARD_PAST_PAPERS.length} Papers · 2011–2026
+              </p>
+            </div>
           </div>
           <ChevronRight
-            className="w-5 h-5 text-slate-300 group-hover:text-[#0B1B3D] transition-colors shrink-0 ml-2"
+            className="w-4 h-4 text-slate-300 group-hover:text-[#0B1B3D] transition-colors shrink-0 ml-1.5"
+            strokeWidth={2}
+          />
+        </button>
+
+        {/* TNH Practice Tile */}
+        <button
+          onClick={() => onNavigate('tnh_practice')}
+          className="bg-white rounded-2xl border border-slate-200/90 hover:border-[#0B1B3D] p-3.5 sm:p-4 flex justify-between items-center transition-all text-left group min-h-[64px] shadow-2xs hover:shadow-xs active:scale-[0.99] cursor-pointer"
+          id="dashboard-tnh-practice-tile"
+        >
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="w-9 h-9 rounded-xl bg-indigo-50 flex items-center justify-center text-[#0B1B3D] shrink-0">
+              <GraduationCap className="w-4.5 h-4.5" />
+            </div>
+            <div className="min-w-0">
+              <h2 className="font-bold text-sm text-slate-900 group-hover:text-[#0B1B3D] transition-colors leading-snug truncate">
+                TNH Practice
+              </h2>
+              <p className="text-[11px] font-medium text-indigo-600 truncate mt-0.5">
+                Acute Conditions · 59 Qs
+              </p>
+            </div>
+          </div>
+          <ChevronRight
+            className="w-4 h-4 text-slate-300 group-hover:text-[#0B1B3D] transition-colors shrink-0 ml-1.5"
             strokeWidth={2}
           />
         </button>
@@ -125,17 +156,22 @@ export default function HomeDashboard({
         {/* Mistakes Review Tile */}
         <button
           onClick={() => onNavigate('review')}
-          className="bg-white rounded-2xl border border-slate-200/90 hover:border-[#0B1B3D] p-4 sm:p-4.5 flex justify-between items-center transition-all text-left group min-h-[64px] shadow-2xs hover:shadow-xs active:scale-[0.99] cursor-pointer"
+          className="bg-white rounded-2xl border border-slate-200/90 hover:border-[#0B1B3D] p-3.5 sm:p-4 flex justify-between items-center transition-all text-left group min-h-[64px] shadow-2xs hover:shadow-xs active:scale-[0.99] cursor-pointer"
         >
-          <div className="flex items-center gap-3.5 min-w-0">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 bg-rose-50 flex items-center justify-center text-rose-700 rounded-xl shrink-0">
-              <AlertCircle className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="w-9 h-9 rounded-xl bg-rose-50 flex items-center justify-center text-rose-700 shrink-0">
+              <AlertCircle className="w-4.5 h-4.5" />
             </div>
-            <h2 className="font-bold text-sm sm:text-base text-slate-900 group-hover:text-[#0B1B3D] transition-colors leading-snug truncate">
-              Review Mistakes
-            </h2>
+            <div className="min-w-0">
+              <h2 className="font-bold text-sm text-slate-900 group-hover:text-[#0B1B3D] transition-colors leading-snug truncate">
+                Review Mistakes
+              </h2>
+              <p className="text-[11px] font-medium text-slate-500 truncate mt-0.5">
+                Targeted Weak Areas
+              </p>
+            </div>
           </div>
-          <div className="flex items-center gap-2 shrink-0 ml-2">
+          <div className="flex items-center gap-1.5 shrink-0 ml-1.5">
             <span
               className={`text-xs font-bold px-2 py-0.5 rounded-lg border ${
                 progress.incorrectQuestions.length > 0
@@ -146,7 +182,7 @@ export default function HomeDashboard({
               {progress.incorrectQuestions.length}
             </span>
             <ChevronRight
-              className="w-5 h-5 text-slate-300 group-hover:text-[#0B1B3D] transition-colors"
+              className="w-4 h-4 text-slate-300 group-hover:text-[#0B1B3D] transition-colors"
               strokeWidth={2}
             />
           </div>

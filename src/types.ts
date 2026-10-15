@@ -16,9 +16,12 @@ export type SourceType =
   | 'original_mcq'
   | 'original_true_false'
   | 'derived_saq'
-  | 'derived_laq';
+  | 'derived_laq'
+  | 'lecture_notes';
 
 export type PaperCategory = 'Block 1' | 'Respiratory Disorders';
+
+export type AppNavTab = 'home' | 'papers' | 'tnh_practice' | 'review';
 
 export interface PaperSet {
   setNumber: number;          // 1-based, unique, contiguous (1, 2, 3...)

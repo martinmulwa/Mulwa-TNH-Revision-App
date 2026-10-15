@@ -33,7 +33,8 @@ const ALLOWED_SOURCE_TYPES: Set<SourceType> = new Set([
   'original_mcq',
   'original_true_false',
   'derived_saq',
-  'derived_laq'
+  'derived_laq',
+  'lecture_notes'
 ]);
 
 const ALLOWED_CATEGORIES = new Set<string>([

@@ -17,6 +17,28 @@ import { chunkQuestions } from '../utils/chunking';
 /** Master collection of curated past examination papers */
 export const PAST_PAPERS: PastPaper[] = ALL_PAPERS;
 
+/**
+ * Determines whether a paper belongs to the TNH Practice papers collection.
+ */
+export function isTnhPracticePaper(paper: PastPaper): boolean {
+  const id = paper.id?.toLowerCase() || '';
+  const block = paper.block?.toLowerCase() || '';
+  const title = paper.title?.toLowerCase() || '';
+  return (
+    id.startsWith('tnh-practice') ||
+    id.startsWith('tnh-respiratory') ||
+    block.includes('tnh practice') ||
+    title.includes('tnh practice') ||
+    (id.includes('tnh') && paper.examType?.toLowerCase() === 'practice')
+  );
+}
+
+/** Official Board/Supplementary Examination Past Papers */
+export const BOARD_PAST_PAPERS: PastPaper[] = PAST_PAPERS.filter(p => !isTnhPracticePaper(p));
+
+/** TNH Practice Examination Papers */
+export const TNH_PRACTICE_PAPERS: PastPaper[] = PAST_PAPERS.filter(p => isTnhPracticePaper(p));
+
 
 
 /**

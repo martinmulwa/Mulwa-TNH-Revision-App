@@ -23,7 +23,8 @@ import {
   InProgressSetState,
   AnswerState,
   QResult,
-  IncorrectQuestionRecord
+  IncorrectQuestionRecord,
+  AppNavTab
 } from './types';
 import {
   loadProgress,
@@ -33,13 +34,19 @@ import {
   makeSetKey,
   INITIAL_SESSION
 } from './utils/storage';
-import { getQuestionsForSet, PAST_PAPERS, findPaper, getRevisionSetsForPaper } from './data/questions';
+import {
+  getQuestionsForSet,
+  PAST_PAPERS,
+  findPaper,
+  getRevisionSetsForPaper,
+  isTnhPracticePaper
+} from './data/questions';
 import { getQuestionMarks, chunkQuestions } from './utils/chunking';
 import { MISTAKE_THRESHOLD, RESOLVE_THRESHOLD } from './config/constants';
 
 export default function App() {
   // Navigation Routing States
-  const [activeTab, setActiveTab] = useState<'home' | 'papers' | 'review'>('home');
+  const [activeTab, setActiveTab] = useState<AppNavTab>('home');
   const [view, setView] = useState<'tabs' | 'sets_selection' | 'active_exam' | 'results'>('tabs');
 
   // Active Context Identifiers
@@ -65,7 +72,7 @@ export default function App() {
     setProgress(loaded);
   }, []);
 
-  const handleTabNavigation = (tab: 'home' | 'papers' | 'review') => {
+  const handleTabNavigation = (tab: AppNavTab) => {
     setActiveTab(tab);
     setView('tabs');
   };
@@ -373,7 +380,11 @@ export default function App() {
       const nextSet = allSets[currentIdx + 1];
       handleSelectSet(selectedPaperId, nextSet.id);
     } else {
-      setActiveTab('papers');
+      if (isTnhPracticePaper(currentPaper)) {
+        setActiveTab('tnh_practice');
+      } else {
+        setActiveTab('papers');
+      }
       setView('tabs');
     }
   };
@@ -419,6 +430,22 @@ export default function App() {
               progress={progress}
               onSelectPaper={handleSelectPaper}
               onBack={() => handleTabNavigation('home')}
+              activeSection="past_papers"
+              onSectionChange={(section) => {
+                setActiveTab(section === 'tnh_practice' ? 'tnh_practice' : 'papers');
+              }}
+            />
+          )}
+
+          {activeTab === 'tnh_practice' && (
+            <PastPapersLibrary
+              progress={progress}
+              onSelectPaper={handleSelectPaper}
+              onBack={() => handleTabNavigation('home')}
+              activeSection="tnh_practice"
+              onSectionChange={(section) => {
+                setActiveTab(section === 'tnh_practice' ? 'tnh_practice' : 'papers');
+              }}
             />
           )}
 
@@ -439,7 +466,12 @@ export default function App() {
           progress={progress}
           onSelectSet={handleSelectSet}
           onBack={() => {
-            setActiveTab('papers');
+            const paper = findPaper(selectedPaperId);
+            if (paper && isTnhPracticePaper(paper)) {
+              setActiveTab('tnh_practice');
+            } else {
+              setActiveTab('papers');
+            }
             setView('tabs');
           }}
         />
